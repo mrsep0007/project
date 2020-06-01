@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+	<script type="text/javascript">
+		
+		function addition(a,b)
+		{
+			var a=document.getElementById('value1').value
+			a=parseInt(a);
+			var b=document.getElementById('value2').value
+			b=parseInt(b);
+			var c= a+b
+			alert("addition"+c);	
+		}
+		function multiply(a,b)
+		{
+			var a=document.getElementById('value1').value
+			a=parseInt(a);
+			var b=document.getElementById('value2').value
+			b=parseInt(b);
+			var c=a*b
+			alert("multiply"+c);	
+		}
+		function divide(a,b)
+		{
+			var a=document.getElementById('value1').value
+			a=parseInt(a);
+			var b=document.getElementById('value2').value
+			b=parseInt(b);
+			var c= a/b;
+			alert("division"+c);
+		}	
+		function subtract(a,b)
+		{
+			var a=document.getElementById('value1').value
+			a=parseInt(a);
+			var b=document.getElementById('value2').value
+			b=parseInt(b);
+			var c=a*b
+			var c=a-b;
+			alert("subtraction"+c);	
+		}
+	</script>
+</head>
+<body>
+	<label style="text-align: center; background-color:blue">calculator</label> <br/>
+	<input type="number" id="value1" name="fname"><br/>
+	<input type="number" id="value2" name="fname"><br/>
+	<button onclick="addition()">Addition</button><br/>
+	<button onclick="multiply()">multiply</button><br/>
+	<button onclick="divide()">Divide</button><br/>
+	<button onclick="subtract()">subtract</button><br/>
+</body>
